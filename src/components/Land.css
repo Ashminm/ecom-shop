@@ -1,0 +1,49 @@
+.land{
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: beige;
+    padding-top: 40px;
+    border-radius:10% 10% 35% 20%;
+    mix-blend-mode: multiply;
+    background-attachment: fixed;
+}
+.land-content{
+    text-align: end;
+    padding-right: 60px;
+    float: right;
+    width: 50%;
+    overflow-y: hidden;
+    height: 80vh;
+}
+.land-content>p{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.land-content>h3{
+    padding: 30px 0 20px 0;
+    color: green;
+}
+.land-shop>a{
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.land-shop .l1{
+    color: #fff;
+    background-color: #000;
+    transition: all 400ms;
+}
+.land-shop .l2{
+    color: #000;
+    transition: all 400ms;
+}
+.land-shop .l1:hover{
+    color: #000;
+    background-color: #fff;
+}
+marquee img{
+    margin-right: 100px;
+}

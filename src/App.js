@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import requests from './requests';
+import Land from './components/Land';
+import Navigation from './components/Navigation';
+import Off from './components/Off';
+import Products from './components/Products';
+import Main from './components/Main';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <Navigation/>
+        <Land  fetchUrl={requests.category}/>
+        <Main fetchUrl={requests.mensclothing}/>
+        <Products title="Featured Products" fetchUrl={requests.mensclothing}/>
+        <Off/>
+        <Products title="women's clothing" fetchUrl={requests.womensclothing}/>
+        <Products title="men's clothing" fetchUrl={requests.jewelery}/>
+        <Products title="electronics" fetchUrl={requests.electronics}/>
     </div>
   );
 }
